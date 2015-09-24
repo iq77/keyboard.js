@@ -1,4 +1,11 @@
-# synchronous use
+# keyboard.js
+
+JavaScript keyboard driver (under construction)
+
+
+
+
+## synchronous use
 
 ```
 var k = new Keyboard('standard');
@@ -7,7 +14,7 @@ if (k.pressed.ESC) ...
 
 
 
-# asynchronous use
+## asynchronous use
 
 ```
 var k = new Keyboard('standard');
@@ -18,6 +25,6 @@ k.removeHandler('ESC', 'esc-handler-1'); // remove previous
 
 
 
-# check...
+## check...
 
-PrntScrn -> keyup only in most browsers?
+PrntScrn -> only keyup event gets handled in some browsers?
